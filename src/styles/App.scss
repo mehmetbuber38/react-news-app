@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  background-color: gainsboro;
+  width: 500px;
+  height: 500px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+
+  &__title{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: darkolivegreen;
+  }
+
+  &__input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid darkolivegreen;
+    margin-bottom: 20px;
+
+    &:focus {
+      background-color: bisque;
+     text-align: center;
+     outline: none;
+     border-color: transparent;
+    }
+  }
+
+  &__button {
+    background-color: darkolivegreen;
+    color: white;
+
+    &:hover{
+      background-color: white;
+      color: darkolivegreen;
+      border: 1px solid white;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+}
